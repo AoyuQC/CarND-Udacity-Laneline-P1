@@ -16,7 +16,9 @@ My pipeline consisted of 5 steps:
 3. **Canny function** to detect all the possible edges;
 
 ![canny](/images_for_writesup/canny_writeup.png)
+
 4. Defined a four sided polygon to **mask** these edges; 
+
 5. The **Hough function** (hough_lines) can work easily after step 4. hough_lines consisted of cv2.HoughLinesP and draw_line(). In order to draw a single line on the left and the right lanes, I modified **draw_line()** this way:
 * iterate the output "lines" of cv2.HoughLinesP;
 * find good candidate of slope and put it in `slope_bak`: no vertical or horizontal line; the absolute value of solpe should be bigger than 0.2
@@ -28,3 +30,5 @@ My pipeline consisted of 5 steps:
 * The side part of line sometimes was considered as a potential line, this may lead to a bigger slope than real one
 ![fail](/images_for_writesup/fail_writeup.png)
 ##### 3. Possible improvements
+* The interest of region should be analyzed further so that different strategies can be applied to different statuses of lanes
+* The color feature of lane should be used for more robust detection 
