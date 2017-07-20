@@ -8,6 +8,7 @@ The goals/steps of this project are the following:
 ##### 1. Description about my pipeline
 My pipeline consisted of 5 steps: 
 1. Converted the image to **grayscale**;
+
 ![raw](https://github.com/oilpig/CarND-Udacity-Laneline-P1/blob/master/images_for_writesup/raw_writesup.png)
 ![grayscale](https://github.com/oilpig/CarND-Udacity-Laneline-P1/images for writesup/gray_writesup.png)
 2. Applied **Guassian smoothing** ;
