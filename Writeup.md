@@ -11,8 +11,10 @@ My pipeline consisted of 5 steps:
 
 ![raw](/images_for_writesup/raw_writeup.png)
 ![grayscale](/images_for_writesup/gray_writeup.png)
+
 2. Applied **Guassian smoothing** ;
 3. **Canny function** to detect all the possible edges;
+
 ![canny](/images_for_writesup/canny_writeup.png)
 4. Defined a four sided polygon to **mask** these edges; 
 5. The **Hough function** (hough_lines) can work easily after step 4. hough_lines consisted of cv2.HoughLinesP and draw_line(). In order to draw a single line on the left and the right lanes, I modified **draw_line()** this way:
